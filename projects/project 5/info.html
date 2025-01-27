@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מידע על הפרויקט</title>
+    <link rel="stylesheet" href="info-style.css">
+</head>
+
+<body>
+    <div class="info-container">
+        <!-- שם הפרויקט -->
+        <h1>שם הפרויקט</h1>
+        <!-- השם שלך -->
+        <h2>נוצר על ידי: כנרת</h2>
+        <!-- כפתורים -->
+        <div class="buttons">
+            <a href="index.html" class="btn view-project" target="_blank">צפייה בפרויקט</a>
+            <a href="project 5.zip" class="btn download-project" download>הורדת הפרויקט</a>
+            <img src="images/project 5.png" alt="">
+        </div>
+        <!-- טכנולוגיות בשימוש -->
+        <div class="technologies">
+            <h3>הטכנולוגיות שהשתמשתי בהן:</h3>
+            <ul class="tech-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- סקריפט לאיפוס גודל תצוגה -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const metaViewport = document.querySelector('meta[name="viewport"]');
+            if (window.innerWidth < 768) {
+                metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, viewport-fit=cover');
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+/* עיצוב כללי */
+body {
+    font-family: 'Varela Round', 'Assistant', sans-serif;
+    background-color: rgb(192, 182, 182);
+    margin: 0;
+    padding: 0;
+}
+
+/* עיצוב תפריט ניווט */
+header nav {
+    font-family: 'Varela Round', 'Assistant', sans-serif;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links a {
+    font-family: 'Varela Round', 'Assistant', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+}
+
+.nav-links a.active {
+    background-color: #555;
+    font-weight: bold;
+}
+
+/* עיצוב טופס צור קשר */
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #444;
+}
+
+/* עיצוב פוטר */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+.footer .technologies {
+    margin-top: 20px;
+}
+
+.footer .technologies img {
+    width: 50px;
+    margin: 5px;
+}

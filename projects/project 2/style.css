@@ -1,0 +1,79 @@
+/* עיצוב כללי */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: lightblue;
+}
+
+/* עיצוב הקונטיינר הראשי */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* עיצוב הכותרת */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #070704;
+}
+
+/* עיצוב הטופס */
+form {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  text-align: center;
+}
+
+/* שדות הטופס */
+input {
+  width: 200px;
+  padding: 10px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* כפתור שליחה */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* עיצוב כותרת ראשית */
+.project-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* עיצוב כותרת משנה */
+.project-subtitle {
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: yellow;
+  text-align: center;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המסע ללא מעצורים שלי</title>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- הלוגו הצף בצד שמאל -->
+    <a href="index.html" class="floating-logo-left">
+        <img src="images/logo.png" alt="Unstoppable Journey" class="logo">
+    </a>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#home">בית</a>
+            <a href="#about">אודות</a>
+            <a href="#gallery">גלריה</a>
+            <a href="contact.html">צור קשר</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>המסע שלי</h1>
+        <p class="subtitle">הפיכת אתגרים לניצחונות</p>
+        <img src="images/logo.png" alt="Unstoppable Journey" class="main-logo">
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/about me.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>קצת עלי</h2>
+
+                    <p>נולדתי בשנת 1977, תינוקת רגילה וחייכנית, אך בגיל 9 חודשים התברר שיש לי שיתוק מוחין מסוג דיפלגיה
+                        ספסטית. אמא שלי, שהייתי הבת הבכורה שלה, מעולם לא ויתרה עליי, אלא האמינה בי ללא תנאי וטיפחה אותי
+                        במסירות.</p>
+                    <p>לאורך חיי למדתי שכל אתגר הוא הזדמנות להתחזק, וכל מכשול הוא קרש קפיצה להצלחה. המוטו שלי, "אם אין
+                        אני לי מי לי", מלווה אותי לאורך הדרך ומחזק אותי בכל צעד שאני עושה.</p>
+                    <p>כיום, אני פועלת להעצמת אנשים עם מוגבלויות ולאפשר להם להשיג חופש כלכלי, תוך כדי לימוד ושיתוף
+                        הסיפור שלי. אני מאמינה בכוחם של התמדה, נחישות ואמונה עצמית, ומשקיעה את זמני בפיתוח כלים חינוכיים
+                        והנחלת הידע שלי לאחרים.</p>
+                    <p>המטרה שלי היא להוות השראה ולסייע לאחרים להתגבר על הקשיים ולהגשים את הפוטנציאל שלהם, בדיוק כפי
+                        שאני ממשיכה לעשות בכל יום.</p>
+                </div>
+                <div class="cv-button-container">
+                    <a href="#" class="cv-button" onclick="handleCV()">להורדת קורות חיים</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>גלריית פרויקטים</h2>
+            <div class="gallery-grid">
+                <!-- פרויקט 1 -->
+                <div class="gallery-item">
+                    <img src="images/landing page  cofee.png" alt="תמונה של פרויקט 1">
+                    <a href="projects/project 1/info-project1.html" class="project-link">לצפייה בפרויקט</a>
+                    <a href="projects/project 1/project 1.zip" class="project-link" download>הורדה</a>
+                </div>
+
+                <!-- פרויקט 2 -->
+                <div class="gallery-item">
+                    <img src="images/landig page2.png" alt="תמונה של פרויקט 2">
+                    <a href="projects/project 2/project2-info.html" class="project-link">לצפייה בפרויקט</a>
+                    <a href="projects/project 2/project 2.zip" class="project-link" download>הורדה</a>
+                </div>
+
+                <!-- פרויקט 3 -->
+                <div class="gallery-item">
+                    <img src="images/project 3.png" alt="תמונה של פרויקט 3">
+                    <a href="projects/‏‏project 3/info-project3.html" class="project-link">לצפייה בפרויקט</a>
+                    <a href="projects/‏‏project 3/‏‏project 3.zip" class="project-link" download>הורדה</a>
+                </div>
+
+                <!-- פרויקט 4 -->
+                <div class="gallery-item">
+                    <img src="images/project 4web.png" alt="תמונה של פרויקט 4">
+                    <a href="projects/project 4/info.html" class="project-link">לצפייה בפרויקט</a>
+                    <a href="projects/project 4/project 4.zip" class="project-link" download>הורדה</a>
+                </div>
+
+                <!-- פרויקט 5 -->
+                <div class="gallery-item">
+                    <img src="images/project 5.png" alt="תמונה של פרויקט 5">
+                    <a href="projects/project 5/info.html" class="project-link">לצפייה בפרויקט</a>
+                    <a href="projects/project 5/project 5.zip" class="project-link" download>הורדה</a>
+                </div>
+
+                <!-- פרויקט 6 -->
+                <div class="gallery-item">
+                    <img src="images/project6 web.png" alt="">
+                    <a href="projects/project 6/info.html" class="project-link">לצפייה בפרויקט</a>
+                    <a href="projects/project 6/project 6.zip" class="project-link" download>הורדה</a>
+                </div>
+
+                <!-- פרויקט 7 -->
+                <div class="gallery-item">
+                    <img src="images/landing page7.png" alt="תמונה של פרויקט 7">
+                    <a href="projects/project 7/info.html" class="project-link">לצפייה בפרויקט</a>
+                    <a href="projects/project 7/project 7.zip" class="project-link" download>הורדה</a>
+                </div>
+
+                <!-- פרויקט 8 -->
+
+                <div class="gallery-item">
+
+                    <img src="images/me.jpeg" alt="תמונה של פרויקט 8">
+
+                    <a href="projects/project 8/info.html" class="project-link">לצפייה בפרויקט</a>
+
+                    <a href="projects/project 8/project 8.zip" class="project-link" download>הורדה</a>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- פוטר -->
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <h4>עקבו אחרי:</h4>
+                <a href="https://www.facebook.com/profile.php?id=61553619324050" target="_blank">Facebook</a>
+
+                <a href="https://www.instagram.com/morkineret/" target="_blank">Instagram</a>
+
+                <a href="https://www.linkedin.com/in/kineret-mor-717b3729a/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="technologies">
+                <h4>טכנולוגיות בשימוש:</h4>
+                <ul>
+                    <li>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                            alt="HTML" style="width: 20px;">
+                        HTML
+                    </li>
+                    <li>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                            alt="CSS" style="width: 20px;">
+                        CSS
+                    </li>
+                    <li>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                            alt="JavaScript" style="width: 20px;">
+                        JavaScript
+                    </li>
+                </ul>
+            </div>
+            <div class="credits">
+                <p>&copy; 2025 המסע ללא מעצורים שלי - כל הזכויות שמורות.</p>
+                <p>נבנה באהבה על ידי כנרת.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleCV() {
+            alert("קורות החיים יהיו זמינים להורדה בקרוב!");
+        }
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

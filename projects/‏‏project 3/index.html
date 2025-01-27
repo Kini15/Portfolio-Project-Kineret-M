@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרויקט 3 - ייעוץ חינם</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="project-container">
+        <!-- כותרת ראשית -->
+        <h1 class="project-title">פרויקט 3 - ייעוץ חינם</h1>
+
+        <!-- תמונה עם טופס -->
+        <div class="form-on-image">
+            <img src="images/project 3.png" alt="ייעוץ חינם" class="project-image">
+            <!-- הטופס על התמונה -->
+            <form id="consultForm">
+                <input type="text" placeholder="שם מלא" class="form-field" required>
+                <input type="email" placeholder="דוא״ל" class="form-field" required>
+                <button type="submit" class="submit-btn">שליחה</button>
+            </form>
+        </div>
+
+        <!-- קישורים -->
+        <div class="project-links">
+
+            <!-- הורדת הפרויקט -->
+
+            <a href="‏‏project 3.zip" class="project-link download" download>הורדת הפרויקט</a>
+        </div>
+
+        <script>
+            document.getElementById('consultForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                alert('הטופס נשלח בהצלחה!');
+                this.reset();
+            });
+        </script>
+</body>
+
+</html>

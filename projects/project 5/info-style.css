@@ -1,0 +1,159 @@
+/* עיצוב כללי */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(167, 161, 145);
+    /* צבע רקע */
+    text-align: center;
+    direction: rtl;
+}
+
+/* מיכל ראשי */
+.info-container {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* כותרות */
+h1 {
+    font-size: 2.5rem;
+    color: black;
+    /* צבע כותרת ראשית */
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: black;
+    /* צבע כותרת משנית */
+    margin-bottom: 20px;
+}
+
+/* כפתורים */
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* מאפשר לכפתורים לעבור שורה במידת הצורך */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    flex: 1 1 calc(50% - 20px);
+    /* כפתורים תופסים 50% מהרוחב במקסימום */
+    max-width: 200px;
+    text-align: center;
+}
+
+/* כפתור לצפייה בפרויקט */
+.view-project {
+    background-color: #43a047;
+    /* צבע ירוק */
+}
+
+.view-project:hover {
+    background-color: #388e3c;
+}
+
+/* כפתור להורדה */
+.download-project {
+    background-color: #1976d2;
+    /* צבע כחול */
+}
+
+.download-project:hover {
+    background-color: #1565c0;
+}
+
+/* עיצוב טכנולוגיות */
+.technologies {
+    margin-top: 30px;
+}
+
+.technologies h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tech-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tech-list li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* תמונה */
+.info-container img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* עיצוב רספונסיבי */
+@media (max-width: 768px) {
+    .info-container {
+        padding: 30px 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        flex: 1 1 100%;
+        /* כפתורים תופסים 100% ברוחב במובייל */
+        max-width: none;
+    }
+
+    .tech-list li {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        gap: 10px;
+    }
+}
+
+/* עיצוב למובייל קטן */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
