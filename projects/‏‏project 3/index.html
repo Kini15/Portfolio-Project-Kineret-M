@@ -26,19 +26,22 @@
 
         <!-- קישורים -->
         <div class="project-links">
-
-            <!-- הורדת הפרויקט -->
-
             <a href="‏‏project 3.zip" class="project-link download" download>הורדת הפרויקט</a>
         </div>
+    </div>
 
-        <script>
-            document.getElementById('consultForm').addEventListener('submit', function (e) {
-                e.preventDefault();
-                alert('הטופס נשלח בהצלחה!');
-                this.reset();
-            });
-        </script>
+    <!-- הוספנו את כפתור החזרה עם הלוגו -->
+    <a href="info-project3.html" class="floating-logo-left">
+        <img src="../../images/logo.png" alt="חזרה לדף מעבר" class="logo">
+    </a>
+
+    <script>
+        document.getElementById('consultForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('הטופס נשלח בהצלחה!');
+            this.reset();
+        });
+    </script>
 </body>
 
 </html>
