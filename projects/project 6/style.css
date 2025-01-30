@@ -9,6 +9,52 @@
 body {
     direction: rtl;
     background-color: #fef9e7;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* עיצוב הכפתור הצף */
+.floating-logo-left {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+}
+
+.floating-logo-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* עיצוב כפתור ההורדה */
+.download-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-link.download {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #00CED1;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.project-link.download:hover {
+    background-color: #00B4B4;
+    transform: translateY(-2px);
 }
 
 .container {
@@ -188,6 +234,15 @@ button:hover {
     .cards-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .floating-logo-left {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project-link.download {
+        padding: 10px 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -216,6 +271,16 @@ button:hover {
 
     .form-section {
         padding: 10px;
+    }
+
+    .floating-logo-left {
+        width: 40px;
+        height: 40px;
+    }
+
+    .project-link.download {
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 }
 

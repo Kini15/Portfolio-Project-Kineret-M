@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -9,17 +9,26 @@
 </head>
 
 <body>
+    <!-- הוספנו את כפתור החזרה -->
+    <a href="../../index.html" class="floating-logo-left">
+        <img src="../../images/logo.png" alt="חזרה לדף הראשי" class="logo">
+    </a>
+
     <div class="info-container">
         <!-- שם הפרויקט -->
-        <h1>שם הפרויקט</h1>
+        <h1>ספרו לנו על החוויה שלכם</h1>
         <!-- השם שלך -->
-        <h2>נוצר על ידי: כנרת</h2>
+        <h2>נוצר על ידי: כנרת מור</h2>
+
+        <!-- תמונת הפרויקט -->
+        <img src="images/project 5.png" alt="תמונת הפרויקט" class="project-image">
+
         <!-- כפתורים -->
         <div class="buttons">
-            <a href="index.html" class="btn view-project" target="_blank">צפייה בפרויקט</a>
+            <a href="index.html" class="btn view-project">צפייה בפרויקט</a>
             <a href="project 5.zip" class="btn download-project" download>הורדת הפרויקט</a>
-            <img src="images/project 5.png" alt="">
         </div>
+
         <!-- טכנולוגיות בשימוש -->
         <div class="technologies">
             <h3>הטכנולוגיות שהשתמשתי בהן:</h3>
@@ -30,16 +39,6 @@
             </ul>
         </div>
     </div>
-
-    <!-- סקריפט לאיפוס גודל תצוגה -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const metaViewport = document.querySelector('meta[name="viewport"]');
-            if (window.innerWidth < 768) {
-                metaViewport.setAttribute('content', 'width=device-width, initial-scale=1.0, viewport-fit=cover');
-            }
-        });
-    </script>
 </body>
 
 </html>

@@ -9,6 +9,24 @@ body {
     direction: rtl;
 }
 
+/* עיצוב הכפתור הצף */
+.floating-logo-left {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+}
+
+.floating-logo-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* אזור עליון */
 .header-container {
     margin: 20px 0;
