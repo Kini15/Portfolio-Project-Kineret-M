@@ -6,12 +6,25 @@ body {
     padding: 0;
 }
 
-/* עיצוב תפריט ניווט */
-header nav {
-    font-family: 'Varela Round', 'Assistant', sans-serif;
-    background-color: #333;
-    padding: 10px 20px;
+/* עיצוב הכפתור הצף - שינוי למיקום בצד שמאל */
+.floating-logo-contact {
+    position: fixed;
+    left: 20px;
+    /* שינוי מ-right ל-left */
+    top: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
 }
+
+.floating-logo-contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
 .nav-links {
     display: flex;
